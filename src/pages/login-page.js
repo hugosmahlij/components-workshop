@@ -2,6 +2,7 @@ import { LitElement, html, css, nothing } from 'lit';
 
 import '../components/login-component.js';
 import '../components/alert-component.js';
+import '../layout/public-layout.js';
 
 export class LoginPage extends LitElement {
   constructor() {
@@ -60,13 +61,15 @@ export class LoginPage extends LitElement {
 
   render() {
     return html`
-      <login-component></login-component>
-      ${this.alertType
-        ? html`<alert-component
-            .type=${this.alertType}
-            .message=${this.alertMessage}
-          ></alert-component>`
-        : nothing}
+      <public-layout>
+        <login-component></login-component>
+        ${this.alertType
+          ? html`<alert-component
+              .type=${this.alertType}
+              .message=${this.alertMessage}
+            ></alert-component>`
+          : nothing}
+      </public-layout>
     `;
   }
 }
