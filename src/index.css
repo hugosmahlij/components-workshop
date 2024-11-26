@@ -12,7 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-success: rgb(36, 242, 36);
-  --color-error: rgb(205, 2, 2);
+  --color-error: rgb(231, 3, 3);
 }
 
 body {
