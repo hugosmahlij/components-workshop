@@ -4,14 +4,20 @@ export class AuthLayout extends LitElement {
   static styles = [
     css`
       :host {
-        display:grid;
-        grid-template-rows: auto 1fr auto
-        gap: 16px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        width: 100%;
+        min-height: 100vh;
       }
 
-      header, footer {
-        background-color: #f8f9fa;
+      header,
+      footer {
+        background-color: #ccc;
         padding: 16px;
+      }
+
+      footer {
+        text-align: center;
       }
 
       main {
