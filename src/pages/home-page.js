@@ -11,6 +11,7 @@ export class HomePage extends LitElement {
         width: 100%;
         --dile-primary-color: #464444;
       }
+
       h1,
       p {
         color: #000;
