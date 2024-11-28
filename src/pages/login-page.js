@@ -1,4 +1,5 @@
 import { LitElement, html, css, nothing } from 'lit';
+import { Router } from '@vaadin/router';
 
 import '../components/login-component.js';
 import '../components/alert-component.js';
@@ -22,6 +23,8 @@ export class LoginPage extends LitElement {
     const { email } = event.detail;
     this.alertType = 'success';
     this.alertMessage = 'login success';
+
+    Router.go('/home');
   }
 
   handleLoginError(event) {

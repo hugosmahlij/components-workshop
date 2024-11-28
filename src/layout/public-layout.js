@@ -5,7 +5,7 @@ export class PublicLayout extends LitElement {
     css`
       :host {
         display: block;
-        background-color: yellow;
+        background-color: #0c0c0c;
         width: 100%;
         display: flex;
         justify-content: center;
